@@ -109,8 +109,6 @@ export default defineEventHandler(async (event) => {
       console.warn(error);
     }
   }
-
-  fs.writeFileSync("tasks.json", JSON.stringify(campaignTasks));
   return {
     data: campaignTasks,
   };
